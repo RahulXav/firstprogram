@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginstyle.css">
+  </head>
+  <body>
+  	<form name="login">
+<div class="login-box">
+  <h1>Animal Adoption NGO's Login</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username"  name="userid"/>
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password" name="pswrd"/>
+  </div>
+
+   <input type="button" class="btn" value="Log In" onclick="check(this.form)" value="Login">
+</div>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+ if(form.userid.value == "animal" && form.pswrd.value == "animal")
+  {
+    window.open('index.html','_parent')
+  }
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
+</script>
+
+  </body>
+</html>
